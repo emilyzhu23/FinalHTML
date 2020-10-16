@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<!--
+  Name: Emily Zhu
+  Class: Honors Comp Sci - Period 7
+  Date: 10.19.20
+  Project: Bootstrap 2 - Final HTML
+-->
+<html>
+  <head>
+    <title>Skiing</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href = "mywebsite.css" />
+  </head>
+
+  <body>
+    <nav id = "Top" class="navbar navbar-expand-sm bg-info navbar-dark">
+      <span class="border border-white border-top-0 border-bottom-0 border-left-0">
+        <a class="navbar-brand">
+          <img src="logo.png" alt="Logo" class = "m-1 rounded" style="width:40px;">
+          Skiing
+        </a>
+      </span>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!--Link to other page-->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#Ski">What Is It</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Slope">Slopes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Fear">Fear</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Gear">Gear</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Basics">How To Ski</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <br />
+
+    <div class = "container-fluid">
+      <div class="card">
+        <img class="card-img-top" src="backgrdimg.jpg" alt="skiimagebackground">
+        <div class="card-img-overlay"> <!-- Vertically center???-->
+          <h1 class="card-title text-center text-white p-5">Skiing Is Fun!!! :)</h1>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class = "container-fluid">
+      <div class = "row">
+        <div class = "col-md-5 align-middle">
+          <div class = "container-fluid text-left">
+            <h4>
+              What is Skiing?
+            </h4>
+            <ul style = "list-style-type:circle;">
+              <li>
+                It's a sport where you travel over snow on skis, especially as a sport or recreation. Competitive skiing falls into a few categories listed below.
+              </li>
+              </br>
+              <li>
+                <div class="btn-group text-center"> <!-- Add link to other page -->
+                  <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
+                     Types of Skiing &nbsp<span class="badge badge-light">&#11088;</span>
+                  </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Alpine Skiing</a>
+                    <a class="dropdown-item" href="#">Cross-Country Skiing</a>
+                    <a class="dropdown-item" href="#">Freestlye Skiing</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class = "col-md-7">
+          <div class = "container">
+            <div class = "row">
+              <div class = "col-6 m-0 p-0">
+                <img src="img1skiing.jpeg" class = "img-fluid rounded border" />
+              </div>
+              <div class = "col-6 m-0 p-0">
+                <img src="img2skiing.jpg" class = "img-fluid rounded ml-n3 mt-5 border border-bottom-0 border-left-0 border-primary" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class = "container-fluid">
+      <div class = "row">
+        <div class = "col-md-6 col-lg-7 align-middle">
+          <div class="container">
+            <div class="card">
+              <img class="card-img-top border border-info border-3" src="img3skiing.jpeg" alt="Ski Resort Img" style="width:100%">
+              <!--Link to Page-->
+              <div class="card-img-overlay d-flex">
+                <a class = "btn btn-primary align-self-center mx-auto" href="#">Learn More about Ski Resorts</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class = "col-md-6 col-lg-5">
+          <div class = "container-fluid text-left">
+            <h4>
+              Slopes?
+            </h4>
+            <ul style = "list-style-type:circle;">
+              <li>
+                Now there are of course various types of slopes, basically the snow you ski down, depending on your skill level.
+              </li>
+              <li>
+                If you're a beginner, it's likely you'll start out on the bunny slopes. These are <em> easier to navigate and approachable</em> because they're generally less steep and pretty short.
+              </li>
+              <li>
+                As your skill level increases, you'll be able to go for longer and steeper runs where <strong> you'll be able to go faster </strong>.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class = "container">
+      <div class = "row">
+        <div class = "col-9 m-0 p-0">
+          <div class = "container align-center text-box-bgcolor">
+            <h4>
+              Fear?
+            </h4>
+            <ul style = "list-style-type:circle;">
+              <li>
+                Sliding down an icy hill and having seeming no control over where you're going is scary.
+              </li>
+              <li>
+                I can't deny that.
+              </li>
+              <li>
+                There's definitely a little bit of danger involved with skiing especially in the very beginning when it's hard to stop or turn and there are a lot of people.
+                But you get the hang of it and it becomes a lot less dangerous once you gain control over at least how to stop.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class = "col-3 m-0 p-0">
+          <img src="img4skiing.jpg" class = "img-fluid rounded ml-n3 pt-4 border border-bottom-0 border-left-0 border-primary" />
+        </div>
+      </div>
+    </div>
+
+    <hr />
+
+  </body>
+</html>
