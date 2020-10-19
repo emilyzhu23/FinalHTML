@@ -1,0 +1,15 @@
+.picContainer{
+  position: relative;
+}
+.overlappic1{
+  width: 125%;
+}
+
+.overlappic2{
+  width: 124%
+}
+
+.text-box-bgcolor{
+  border-style: solid;
+  border-color: rgb(233, 239, 242);
+}
