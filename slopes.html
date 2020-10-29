@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<!--
+  Name: Emily Zhu
+  Class: Honors Comp Sci - Period 7
+  Date: 10.19.20
+  Project: Bootstrap 2 - Final HTML
+-->
+<html>
+  <head>
+    <title>Skiing</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href = "slopes.css" />
+  </head>
+  <body>
+    <nav id = "Top" class="navbar navbar-expand-sm bg-info navbar-dark">
+      <span class="border border-white border-top-0 border-bottom-0 border-left-0">
+        <a class="navbar-brand">
+          <img src="logo.png" alt="Logo" class = "m-1 rounded" style="width:40px;" />
+          Skiing
+        </a>
+      </span>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!--Link to other page-->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="mywebsite.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="whatisit.html">What Is It</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#Slope">Slopes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="fear.html">Fear</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Gear">Gear</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Basics">How To Ski</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="jumbotron" style="margin-top: 40px;">
+      <div class = "container">
+        <h1 id = "Top" class = "display-3 text-white">Slopes?</h1>
+      </div>
+    </div>
+
+    <div class = "container-fluid">
+      <h4 class = "text-center">Types of Ski Slopes (in the U.S.)</h4>
+      <br />
+        <div class = "row">
+          <div class = "col-sm-7 col-md-6 border border-top-0 border-bottom-0 border-left-0">
+            <ul style = "list-style-type:circle;">
+              <li>
+                The steepness of ski trails is usually measured by grade (as a percentage) instead of degree angle.
+              </li>
+              <li>
+                In general, beginner slopes (green circle) are between 6% and 25%. Intermediate slopes (blue square) are between 25% and 40%.
+                Difficult slopes (black diamond) are 40% and up. However, this is just a general "rule of thumb".
+              </li>
+              <li>
+                Although slope gradient is the primary consideration in assigning a trail difficulty rating, other factors come into play.
+                A trail will be rated by its most difficult part, even if the rest of the trail is easy.
+                Ski resorts assign ratings to their own trails, rating a trail compared only with other trails at that resort.
+                The resort may take into consideration the width of the trail, sharpest turns, terrain roughness, and whether the trail is groomed regularly.
+              </li>
+
+              <div class = "container mt-5">
+                <div class="card border border-0">
+                  <div class = "row">
+                    <div class = "col-6 m-0 p-0">
+                      <img class="card-img-top" src="page2img2.jpg" alt="Ski Resort Img" style="width:100%" />
+                    </div>
+                    <div class = "col-6 m-0 p-0">
+                      <img class="card-img-top ml-n4 mt-5 rounded" src="page2img3.jpeg" alt="Ski Resort Img" style="width:100%" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ul>
+          </div>
+          <div class = "col-sm-5 col-md-6">
+            Ski Slope Difficulty Rankings:
+            <ul>
+              <li>
+                Green Circle - Easy slope.
+                <br/>
+                <img src = "page2greencircle.png" class = "imgsymbol" alt = "Green Circle"/>
+              </li>
+              <li>
+                Blue Square - Intermediate slope, good pistes for the average skier.
+                <br/>
+                <img src = "page2bluesquare.png" class = "imgsymbol" alt = "Blue Square" />
+              </li>
+              <li>
+                Black Diamond - Difficult slope, only for good skiers and snowboarders.
+                <br/>
+                <img src = "page2blackdiamond.png" class = "imgsymbol" alt = "Black Diamond" />
+              </li>
+              <li>
+                Double Black Diamond - Very difficult slope, only for very good / expert skiers and snowboarders.
+                <br />
+                <img src = "page2doubleblackdiamond.png" class = "imgsymbol" alt = "Double Black Diamond" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <br />
+      <hr />
+
+      <div class = "container-fluid">
+        <h4 class = "text-center">Ski Resorts in California</h4>
+        <br />
+
+        <div class = "row">
+          <div class = "col-6">
+            <div class="card">
+              <img class="card-img-top border border-info border-3" src="page2img4.jpg" alt="Ski Resort Img" style="width:100%; height: 100%;" />
+              <!--Link to Page-->
+              <div class="card-img-overlay d-flex">
+                <a class = "btn btn-primary align-self-center mx-auto" data-toggle = "modal" data-target = "#skiresort1"">Mammoth Lakes</a>
+              </div>
+            </div>
+            <div class = "modal fade" id = "skiresort1">
+              <div class = "modal-dialog">
+                <div class = "modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title">Mammoth Lakes Ski Resort</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+
+                  <div class="modal-body">
+                    <iframe src = "https://www.visitmammoth.com/trip-ideas/skiing-and-snowboarding-mammoth-mountain/" title = "California Ski Resorts" style = "width: 100%; height: 500px;"></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class = "col-6">
+            <div class="card">
+              <img class="card-img-top border border-info border-3" src="page2img5.jpg" alt="Ski Resort Img" style="width:100%; height: 100%;" />
+              <!--Link to Page-->
+              <div class="card-img-overlay d-flex">
+                <a class = "btn btn-primary align-self-center mx-auto" data-toggle = "modal" data-target = "#skiresort2">Big Bear</a>
+              </div>
+            </div>
+            <div class = "modal fade" id = "skiresort2">
+              <div class = "modal-dialog">
+                <div class = "modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title">Big Bear Ski Resort</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+
+                  <div class="modal-body">
+                    <iframe src = "https://www.bigbearmountainresort.com/things-to-do/ski-ride" title = "California Ski Resorts" style = "width: 100%; height: 500px;"></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class = "row mt-3">
+          <div class = "col-6">
+            <div class="card">
+              <img class="card-img-top border border-info border-3" src="page2img6.jpg" alt="Ski Resort Img" style="width:100%; height: 100%;" />
+              <!--Link to Page-->
+              <div class="card-img-overlay d-flex">
+                <a class = "btn btn-primary align-self-center mx-auto" data-toggle = "modal" data-target = "#skiresort3">Squaw Valley</a>
+              </div>
+            </div>
+            <div class = "modal fade" id = "skiresort3">
+              <div class = "modal-dialog">
+                <div class = "modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title">Squaw Valley Ski Resort</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+
+                  <div class="modal-body">
+                    <iframe src = "https://en.wikipedia.org/wiki/Squaw_Valley_Ski_Resort" title = "California Ski Resorts" style = "width: 100%; height: 500px;"></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class = "col-6">
+            <div class="card">
+              <img class="card-img-top border border-info border-3" src="page2img7.jpg" alt="Ski Resort Img" style="width:100%; height: 100%;" />
+              <!--Link to Page-->
+              <div class="card-img-overlay d-flex">
+                <a class = "btn btn-primary align-self-center mx-auto" data-toggle = "modal" data-target = "#skiresort4">Kirkwood</a>
+              </div>
+            </div>
+            <div class = "modal fade" id = "skiresort4">
+              <div class = "modal-dialog">
+                <div class = "modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title">Kirkwood Ski Resort</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+
+                  <div class="modal-body">
+                    <iframe src = "https://www.kirkwood.com/" title = "Kirkwood Ski Resort" style = "width: 100%; height: 500px;"></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br/>
+        <div class = "d-flex">
+          <button type = "button" class = "btn btn-primary btn-block mx-auto" href = "https://skicalifornia.org/best-california-ski-resorts/">
+            Click Here For More Resorts
+          </button>
+        </div>
+      </div>
+
+      <hr/>
+
+      <nav class="navbar navbar-expand-sm bg-info navbar-dark"">
+        <span class="border border-white border-top-0 border-bottom-0 border-left-0 mr-2">
+          <a class="navbar-brand">
+            <img src="logo.png" alt="Logo" class = "m-1 rounded" style="width:40px;" />
+          </a>
+        </span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--Link to other page-->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href = "#" class = "nav-link">
+                Contact
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href = "#" class = "nav-link">
+                Watch Some More Cool Videos
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href = "#" class = "nav-link">
+                Other Informational Websites
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+  </body>
+</html>
