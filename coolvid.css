@@ -1,0 +1,6 @@
+body {
+  background-image: url('backgrndcoolvid.jpg'); /* create image for background */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
